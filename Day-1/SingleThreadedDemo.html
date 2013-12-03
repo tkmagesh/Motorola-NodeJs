@@ -10,8 +10,10 @@
 		});
 		function onBtnDoWorkClick(){
 			displayMessage("Work Started");
-			doWork();
-			displayMessage("Work Completed");
+			setTimeout(function(){
+				doWork();
+				displayMessage("Work Completed");
+			});
 		}
 		function displayMessage(msg){
 			document.getElementById("divMessage").innerHTML += msg + "<br/>";
