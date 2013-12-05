@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<h1>Tasks</h1>
+	<ul>
+		<%	tasks.forEach(function(taskName){ %>
+				<li><%= taskName%></li>
+		<% }) %>
+	</ul>
+	<a href="/tasks/new">New Task</a>
+</body>
+</html>
